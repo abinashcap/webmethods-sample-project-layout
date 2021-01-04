@@ -24,11 +24,7 @@ pipeline {
     stages {
         stage('Build'){
             steps {
-                bat "SET JAVA_HOME=C:/SoftwareAG105/jvm/jvm
-SET JRE_HOME=C:/SoftwareAG105/jvm/jvm/jre
-
-C:/SoftwareAG105/common/lib/ant/bin/ant -f C:/SoftwareAG105/common/AssetBuildEnvironment/master_build/build.xml
-"
+                bat "SET JAVA_HOME=C:/SoftwareAG105/jvm/jvm SET JRE_HOME=C:/SoftwareAG105/jvm/jvm/jre C:/SoftwareAG105/common/lib/ant/bin/ant -f C:/SoftwareAG105/common/AssetBuildEnvironment/master_build/build.xml"
             }
         }
     }
